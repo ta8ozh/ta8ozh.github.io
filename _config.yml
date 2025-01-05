@@ -1,13 +1,13 @@
-title: My Tiny Blog
-author: My Name
-description: A minimal Jekyll blog.
-keywords: jekyll, minimal, blog
+title: /home/ta8ozh
+author: C. O.
+description: I'm not someone significant enough for a story to be written about me (yet).
+keywords: aviation, fpv, photography, programing, ham radio, linux
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://myusername.github.io"
+url: "https://ta8ozh.github.io"
 
 #social links
-bluesky: myusername
-twitter: myusername
-github: myusername
-linkedin: myusername
-email: test@test.com
+bluesky: ta8ozh.bsky.social
+twitter: ta8ozh
+github: ta8ozh
+linkedin: canerozhan
+#email: test@test.com
