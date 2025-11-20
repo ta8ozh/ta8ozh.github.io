@@ -5,18 +5,6 @@ date: 2025-11-20 00:00:00 +0000
 ---
 
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        background: #f4f4f4;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-    }
-
-    h1 {
-        margin-top: 30px;
-    }
-
     .timer-box {
         background: white;
         width: 70%;
