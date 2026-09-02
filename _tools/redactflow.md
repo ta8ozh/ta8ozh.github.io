@@ -1,9 +1,9 @@
 ---
 title: RedactFlow
 permalink: /tools/redactflow.html
+layout: null
 ---
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
