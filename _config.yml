@@ -11,3 +11,7 @@ twitter: ta8ozh
 github: ta8ozh
 linkedin: canerozhan
 #email: test@test.com
+
+collections:
+  tools:
+    output: true
