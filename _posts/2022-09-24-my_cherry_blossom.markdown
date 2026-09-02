@@ -3,6 +3,7 @@ title: "My Cherry Blossom"
 date: 2022-09-24 00:00:00 +0000
 permalink: /my-cherry-blossom
 layout: null
+hidden: true
 ---
 
 <html lang="en">
@@ -397,7 +398,7 @@ layout: null
       secondsElement.textContent = seconds;
 
       totalDaysElement.textContent =
-        totalDays.toLocaleString("en-US");
+        totalDays.toLocaleString("en-IE");
 
       /*
         One elapsed day = one heart
