@@ -7,9 +7,11 @@ hidden: true
 ---
 
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#090308" />
 
   <title>Our Time Together ❤️</title>
 
@@ -20,12 +22,24 @@ hidden: true
       padding: 0;
     }
 
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      min-height: 100%;
+      background: #090308;
+    }
+
     body {
       min-height: 100vh;
-      overflow: hidden;
+      min-height: 100dvh;
+
       font-family: Arial, Helvetica, sans-serif;
+
       background:
         radial-gradient(circle at top, #4a1730 0%, #1d0b18 45%, #090308 100%);
+
       color: white;
     }
 
@@ -58,11 +72,16 @@ hidden: true
     .container {
       position: relative;
       z-index: 10;
+
       min-height: 100vh;
+      min-height: 100dvh;
+
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 25px;
+
+      padding:
+        calc(25px + env(safe-area-inset-top)) calc(25px + env(safe-area-inset-right)) calc(25px + env(safe-area-inset-bottom)) calc(25px + env(safe-area-inset-left));
     }
 
     .content {
@@ -91,7 +110,9 @@ hidden: true
     }
 
     @keyframes heartbeat {
-      0%, 100% {
+
+      0%,
+      100% {
         transform: scale(1);
       }
 
@@ -412,4 +433,5 @@ hidden: true
   </script>
 
 </body>
+
 </html>
