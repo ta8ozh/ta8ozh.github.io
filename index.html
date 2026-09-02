@@ -3,9 +3,11 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     {% include head.html %}
 </head>
+
 <body>
     <header>
         <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
@@ -15,12 +17,13 @@
         <section>
             <h2>Tools</h2>
             {% for tool in site.tools %}
+            {% unless tool.hidden %}
             <article>
                 <div class="post-header">
                     <a href="{{ tool.url | relative_url }}">{{ tool.title }}</a>
                 </div>
                 {% if tool.description %}
-                    <p>{{ tool.description }}</p>
+                <p>{{ tool.description }}</p>
                 {% endif %}
                 {% if tool.tags.size > 0 %}
                 <div class="tags">
@@ -30,18 +33,20 @@
                 </div>
                 {% endif %}
             </article>
+            {% endunless %}
             {% endfor %}
         </section>
         <section>
             <h2>Blog Posts</h2>
             {% for post in site.posts %}
+            {% unless post.hidden %}
             <article>
                 <div class="post-header">
                     <time>{{ post.date | date: "%Y-%m-%d" }}</time>
                     <a href="{{ post.url }}">{{ post.title }}</a>
                 </div>
                 {% if post.description %}
-                    <p>{{ post.description }}</p>
+                <p>{{ post.description }}</p>
                 {% endif %}
                 {% if post.tags.size > 0 %}
                 <div class="tags">
@@ -51,10 +56,12 @@
                 </div>
                 {% endif %}
             </article>
+            {% endunless %}
             {% endfor %}
         </section>
     </main>
     <div class="rug"></div>
     {% include footer.html %}
 </body>
+
 </html>
