@@ -13,6 +13,26 @@
     </header>
     <main>
         <section>
+            <h2>Tools</h2>
+            {% for tool in site.tools %}
+            <article>
+                <div class="post-header">
+                    <a href="{{ tool.url | relative_url }}">{{ tool.title }}</a>
+                </div>
+                {% if tool.description %}
+                    <p>{{ tool.description }}</p>
+                {% endif %}
+                {% if tool.tags.size > 0 %}
+                <div class="tags">
+                    {% for tag in tool.tags %}
+                    <span>#{{ tag }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </article>
+            {% endfor %}
+        </section>
+        <section>
             <h2>Blog Posts</h2>
             {% for post in site.posts %}
             <article>
