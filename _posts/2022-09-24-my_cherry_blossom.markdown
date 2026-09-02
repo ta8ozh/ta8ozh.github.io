@@ -278,7 +278,7 @@ hidden: true
     */
     startTextElement.textContent =
       "Since " +
-      startDate.toLocaleString("en-US", {
+      startDate.toLocaleString("en-IE", {
         day: "numeric",
         month: "long",
         year: "numeric",
